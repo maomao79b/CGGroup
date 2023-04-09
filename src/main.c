@@ -9,7 +9,6 @@ void show(void)
 {
     glClear(GL_COLOR_BUFFER_BIT);
     glMatrixMode(GL_MODELVIEW);
-    // glColor3f(0.0, 0.0, 1.0);
     glLoadIdentity();
     for (int i = 0; i < num_polygons; i++)
     {
