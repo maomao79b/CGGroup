@@ -14,7 +14,12 @@ void show(void)
     for (int i = 0; i < num_polygons; i++)
     {
         glColor3f(polygons[i].red, polygons[i].green, polygons[i].blue);
-        draw_polygon(polygons[i]);
+        if(polygons[i].state == 'p'){
+            draw_polygon(polygons[i]);
+        }
+        else if(polygons[i].state == 's'){
+            draw_star(polygons[i]);
+        }
     }
     glFlush();
 }
